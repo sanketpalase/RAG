@@ -30,6 +30,11 @@ GEMINI_MODEL = "gemini-flash-latest"
 DEFAULT_TEMPERATURE = 0.3
 TOP_K = 4
 
+# Thread pool size for parallel file loading during ingestion (I/O + OCR
+# bound, so threads are fine — capped so a big folder drop doesn't spawn
+# hundreds of threads at once).
+MAX_INGEST_WORKERS = int(os.getenv("MAX_INGEST_WORKERS", "4"))
+
 TESSERACT_CMD = os.getenv("TESSERACT_CMD")  # Windows: path to tesseract.exe
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 os.makedirs(DOCS_FOLDER, exist_ok=True)
