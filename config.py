@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 config.py
 Minimal constants for the POC — no HNSW tuning knobs, no multi-file
@@ -36,4 +35,3 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 os.makedirs(DOCS_FOLDER, exist_ok=True)
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(PERSIST_DIR, exist_ok=True)
-=======
