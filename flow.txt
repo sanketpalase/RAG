@@ -1,0 +1,23 @@
+Ingestion
+1. user can drop files in documents folder or upload from UI 
+2. pdf/txt/json/images
+3. process data and add into vectordb( text extraction,chunking,embedding,metadata creation,collection.add ingest into vectordb)
+
+Query Chat
+1. user ask Query
+2. query in embedding
+3. search similarity
+4. build context
+5. generate answer
+6. extract responce and send to user
+
+
+Technology
+
+python
+streamlit
+chromadb
+gemini
+sentense transformer 
+langchain
+Pytesseract
